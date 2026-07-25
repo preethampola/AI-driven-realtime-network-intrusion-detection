@@ -1,0 +1,22 @@
+# Local Python environment and notebook state
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Large source dataset; download separately before retraining
+data/
+
+# Live capture output and temporary prediction history
+outputs/
+*.csv
+
+# Operating-system and editor files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Keep the deployed Random Forest model, but ignore any models generated while
+# running notebooks unless deliberately added with git add -f.
+models/*
+!models/cicids2017_multiclass_random_forest.joblib
